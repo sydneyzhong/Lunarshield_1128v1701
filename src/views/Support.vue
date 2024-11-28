@@ -1,7 +1,5 @@
 <template>
   <v-container class="py-8">
-    <h2 class="text-h4 mb-6">支持</h2>
-    
     <!-- App Download Section -->
     <div class="text-center mb-12">
       <h3 class="text-h5 mb-6">APP下载</h3>
@@ -27,42 +25,34 @@
       </v-row>
     </div>
 
-    <v-row>
+    <!-- Bottom Section with Contact and Business QR Codes -->
+    <v-row class="mt-auto align-center" style="position: fixed; bottom: 0; left: 0; right: 0; background: white; padding: 20px;">
       <!-- Contact Information -->
-      <v-col cols="12" md="6">
-        <v-card class="mb-4">
-          <v-card-title class="text-h5">联系方式</v-card-title>
-          <v-card-text>
-            <div class="text-body-1 mb-4">
-              <strong>深圳市守月科技有限公司</strong>
-            </div>
-            <div class="text-body-1 mb-4">
-              地址：深圳市宝安区航城街道黄麻布社区簕竹角坚鼎科技园1栋厂房2层
-            </div>
-            <div class="text-body-1">
-              邮箱：lunarshied@foxmail.com
-            </div>
-          </v-card-text>
-        </v-card>
+      <v-col cols="12" md="4">
+        <div class="text-body-1">
+          <div class="font-weight-bold mb-4">联系方式：</div>
+          <div class="mb-2"><strong>深圳市守月科技有限公司</strong></div>
+          <div class="mb-2">地址：深圳市宝安区航城街道黄麻布社区簕竹角坚鼎科技园1栋厂房2层</div>
+          <div>邮箱：lunarshied@foxmail.com</div>
+        </div>
       </v-col>
 
-      <!-- Business Cooperation QR Codes -->
-      <v-col cols="12" md="6">
-        <h3 class="text-h5 mb-6">商务合作</h3>
+      <!-- Business QR Codes -->
+      <v-col cols="12" md="8">
         <v-row>
           <v-col cols="6" class="text-center">
             <v-img
               src="/images/business-qr1.png"
-              max-width="200"
-              class="mx-auto mb-4"
+              max-width="150"
+              class="mx-auto"
               contain
             ></v-img>
           </v-col>
           <v-col cols="6" class="text-center">
             <v-img
               src="/images/business-qr2.png"
-              max-width="200"
-              class="mx-auto mb-4"
+              max-width="150"
+              class="mx-auto"
               contain
             ></v-img>
           </v-col>
@@ -78,5 +68,9 @@
 <style scoped>
 .v-img {
   border-radius: 8px;
+}
+
+.v-container {
+  padding-bottom: 200px; /* Add space for fixed bottom section */
 }
 </style>
